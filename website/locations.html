@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations | Tabernacle of Christ International</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-cross"></i></span>
+                <div class="logo-text">
+                    <span class="logo-main">TCI</span>
+                    <span class="logo-sub">Tabernacle of Christ International</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="testimonies.html">Testimonies</a></li>
+                <li><a href="prayer.html">Prayer</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="locations.html" class="active">Locations</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <span class="page-tag">Find Us</span>
+            <h1 class="page-title">Global Locations</h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="locations-intro text-center">
+                <h2>18 Countries. One Family.</h2>
+                <p>From our headquarters in Zimbabwe to the newest assemblies in Ghana and Nepal, find a TCI branch near you.</p>
+            </div>
+            
+            <div class="locations-map-placeholder">
+                <i class="fas fa-globe-africa"></i>
+                <span>Interactive Map Coming Soon</span>
+                <p>Updated branch information and Google Map pins will be shared in due course.</p>
+            </div>
+
+            <div class="locations-filter">
+                <input type="text" id="locationSearch" placeholder="Search by country or city..." class="search-input">
+                <select id="regionFilter" class="filter-select">
+                    <option value="all">All Regions</option>
+                    <option value="southern-africa">Southern Africa</option>
+                    <option value="east-africa">East Africa</option>
+                    <option value="west-africa">West Africa</option>
+                    <option value="asia">Asia</option>
+                </select>
+            </div>
+
+            <div class="locations-grid" id="locationsGrid">
+                <!-- Populated by JS -->
+            </div>
+
+            <div class="coming-soon-section">
+                <h3><i class="fas fa-rocket"></i> Coming Soon</h3>
+                <div class="coming-soon-flags">
+                    <div class="flag-card">
+                        <span class="flag-placeholder">🇬🇦</span>
+                        <span>Gabon</span>
+                    </div>
+                    <div class="flag-card">
+                        <span class="flag-placeholder">🇪🇹</span>
+                        <span>Ethiopia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-cross"></i></span>
+                        <div class="logo-text">
+                            <span class="logo-main">TCI</span>
+                            <span class="logo-sub">Tabernacle of Christ International</span>
+                        </div>
+                    </div>
+                    <p>Established January 29, 2006.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About TCI</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Global Headquarters</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zimbabwe</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tabernacle of Christ International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

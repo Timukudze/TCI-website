@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonies | Tabernacle of Christ International</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-cross"></i></span>
+                <div class="logo-text">
+                    <span class="logo-main">TCI</span>
+                    <span class="logo-sub">Tabernacle of Christ International</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="testimonies.html" class="active">Testimonies</a></li>
+                <li><a href="prayer.html">Prayer</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <span class="page-tag">Stories of Faith</span>
+            <h1 class="page-title">Testimonies</h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="testimonies-layout">
+                <div class="testimonies-main">
+                    <div class="section-header">
+                        <span class="section-tag">Approved Stories</span>
+                        <h2 class="section-title">Changed Lives</h2>
+                    </div>
+                    <div class="testimonies-list" id="approvedTestimonies">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+                <div class="testimonies-sidebar">
+                    <div class="submit-box">
+                        <h3><i class="fas fa-pen-fancy"></i> Share Your Story</h3>
+                        <p>Has God done something amazing in your life? Share your testimony to encourage others.</p>
+                        <form id="testimonyForm" class="form-stacked">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" id="tName" required placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Location/Branch</label>
+                                <input type="text" id="tLocation" required placeholder="e.g., Harare, Zimbabwe">
+                            </div>
+                            <div class="form-group">
+                                <label>Your Testimony</label>
+                                <textarea id="tContent" rows="5" required placeholder="Share what God has done..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select id="tCategory">
+                                    <option>Healing</option>
+                                    <option>Salvation</option>
+                                    <option>Provision</option>
+                                    <option>Restoration</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit for Review</button>
+                            <p class="form-note"><i class="fas fa-info-circle"></i> All testimonies are reviewed by admin before posting.</p>
+                        </form>
+                    </div>
+
+                    <!-- Admin Panel Simulation -->
+                    <div class="admin-panel" id="adminPanel" style="display: none;">
+                        <h3><i class="fas fa-shield-alt"></i> Admin Review Queue</h3>
+                        <div class="pending-list" id="pendingTestimonies">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-outline" id="toggleAdmin" style="margin-top: 1rem;">
+                        <i class="fas fa-lock"></i> Admin Login (Demo)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-cross"></i></span>
+                        <div class="logo-text">
+                            <span class="logo-main">TCI</span>
+                            <span class="logo-sub">Tabernacle of Christ International</span>
+                        </div>
+                    </div>
+                    <p>Established January 29, 2006.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About TCI</a></li>
+                        <li><a href="testimonies.html">Testimonies</a></li>
+                        <li><a href="prayer.html">Prayer Requests</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Global Headquarters</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Zimbabwe</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tabernacle of Christ International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
